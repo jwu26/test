@@ -7,3 +7,7 @@ tar jcv Fterm | openssl des3 -salt > Fterm.tar.bz2
 decrypt:
 cat ../Fterm.tar.bz2 | openssl des3 -d -salt | tar jxv
 
+
+====
+write repo:
+git push https://github.com/jwu26/test.git master
